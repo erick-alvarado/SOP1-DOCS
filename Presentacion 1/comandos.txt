@@ -1,0 +1,40 @@
+------ VM
+1. Crear llave ssh en la consola de windows
+ssh-keygen -t rsa -f llave -C erickalv.bugs@hotmail.com
+2. Copiar y pegar en el apartado de seguridad o por su defecto en metadata hasta abajo de compute engine
+3. Modificar Editar -> Metadatos -> enable-oslogin = false
+4. Instalar flask
+sudo apt update
+sudo apt install python3.8
+python3 --version
+sudo apt install python3-flask
+
+export FLASK_APP=app.py
+flask run --host=0.0.0.0
+
+5. Ir al apartado de red de vpc, luego en reglas de firewall, crear una regla de firewall all in y una all out. Explicar sobre redes2. 
+
+
+
+----- Docker 
+1. Generar el archivo requirements.txt 
+pip install pipreqs
+pipreqs .
+
+2. Crear un dockerfile con el contenido siguiente, hablar acerca del ENV
+3. Crear un dockerignore para eliminar todo lo delicado
+4. Crear imagen con el comando, cabe recalcar que se utiliza este formato para subirlo a docker hub directamente.
+
+Formato:
+docker build -t user/repository_name:image_tag .
+
+Ejemplo: 
+docker build -t erickalv/sopes:ejemploDocker .
+
+5. Desde la VM instalar docker segun la documentacion
+6. Hacer pull de la imagen creada 
+sudo docker pull erickalv/sopes:ejemploDocker
+7. Correr el contenedor con el siguiente comando
+sudo docker run -p 5000:5000 -d id_imagen 
+
+

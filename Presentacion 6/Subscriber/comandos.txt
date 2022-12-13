@@ -1,0 +1,11 @@
+1.  Configurar el servicio PubSub
+2. Configurar un nuevo topic
+3. Crear un nuevo subscriber dar un nombre y dejar todo como default.
+4. Guardar los cambios
+5. Acceder a IAM
+6. Crear un service account con permisos de Publisher y subscriber
+7. Descargar archivo JSON
+8. Agregar la llave a una variable de entorno llamada
+$env:GOOGLE_APPLICATION_CREDENTIALS='C:\Users\alexa\Desktop\Sopes 1\SOP1-DOCS\Presentacion 6\key.json'
+9. Instalar las dependencias de google 
+npm install --save @google-cloud/pubsub

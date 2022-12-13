@@ -1,0 +1,16 @@
+---- Cloud SDK
+* Verificar que se realiza desde una consola CMD y no desde la powershell.
+* Logear con sus credenciales de google y con el proyecto correcto. 
+gcloud init 
+---- Cloud run
+1. Crear la imagen desde la computadora local
+Formato:
+docker build -t gcr.io/id_repositorio_cloud/nombre_carpeta:tag .
+Ejemplo:
+docker build -t gcr.io/glassy-clarity-370620/proyecto1:ejemplopy .
+
+2. Habilitar GCP container registry API en google cloud
+3. Configurar el auth de docker en la consola con el comando
+gcloud auth configure-docker
+4. Subir la imagen a GCP
+docker push gcr.io/glassy-clarity-370620/proyecto1:ejemplopy

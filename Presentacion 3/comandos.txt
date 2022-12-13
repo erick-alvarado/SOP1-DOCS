@@ -1,0 +1,16 @@
+-------- Node JS.
+1. Instalar NodeJs conforme a la documentacion
+2. Validar instalacion con el comando
+node --version
+3. Instalar las dependencias necesarias mediante el comando 
+npm install
+4. Para ejecutar el servidor utilizar el comando 
+node app.js
+
+-------- App Engine
+1. Ejecutar el comando de loggeo en gcp (Debe de tener instalado el sdk, este se explico en el lab anterior)
+gcloud init
+2. Para realizar el deploy se ejecuta el comando 
+gcloud app deploy
+3. Para verficar en el buscador la aplicacion se ejecuta el comando
+gcloud app browse

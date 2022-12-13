@@ -1,0 +1,6 @@
+1. Instalar dependencias
+pip install --upgrade google-cloud-pubsub
+2. Ejecutar el comando en consola
+$env:GOOGLE_APPLICATION_CREDENTIALS='C:\Users\alexa\Desktop\Sopes 1\SOP1-DOCS\Presentacion 6\key.json'
+3. Correr el servidor mediante el comando
+python app.py

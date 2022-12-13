@@ -1,0 +1,11 @@
+1. Para instalar locust debe de ejecutar los siguientes comandos
+pip3 install locust
+locust -V
+2. Para ejecutar locust debe de utilizar el comando
+locust --locustfile traffic.py
+3. Ingresar a localhost:8089
+4. Introducir la url a la que se desea hacer las pruebas en este caso es
+http://127.0.0.1:5000
+
+5. Para ejecutar tester.py se utiliza el comando 
+python tester.py
