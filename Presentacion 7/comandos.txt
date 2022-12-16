@@ -1,0 +1,15 @@
+1. Creamos la imagen
+docker build -t python_net:back .
+2. Correr la imagen de las tres formas
+
+
+
+
+docker network ls 
+docker network create -d bridge networkapi
+docker network inspect networkapi
+docker network ls
+
+docker logs nombre_contenedor
+
+docker network connect networkapi nombre_contenedor
