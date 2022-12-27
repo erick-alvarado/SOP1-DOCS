@@ -1,0 +1,26 @@
+1. Descargar headers del módulo específico que tenemos
+$ sudo apt-get install linux-headers-$(uname -r)
+
+2. Descargar build essentials, para compilar el código c
+$ sudo apt-get install build-essential
+
+3. Ir al directorio del modulo
+cd [directorio_modulo]
+
+4. Compilar el archivo
+make
+
+5. Revisamos la salida que genero make
+ls -l
+
+6. Montamos el modulo 
+sudo insmod [nombre_modulo].ko
+
+7. Revisar los logs de los modulos
+sudo dmesg
+
+8. Revisamos el documento generado
+cat /proc/[nombre_modulo]
+
+9. Eliminar el modulo
+sudo rmmod [nombre_modulo]

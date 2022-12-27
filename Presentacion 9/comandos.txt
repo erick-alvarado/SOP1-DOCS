@@ -1,0 +1,13 @@
+1. Crear servicios/deploy a partir de archivo yaml
+kubectl apply -f server-web.yaml
+
+
+2. Obtener pods corriendo
+kubectl get pod
+
+3. Obtener servicios creados
+kubectl get service
+kubectl describe service server-deployment
+
+4. Eliminar un servicio
+kubectl delete -f ingress-web.yaml

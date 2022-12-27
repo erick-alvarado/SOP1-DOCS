@@ -20,9 +20,9 @@ class MessageTraffic(HttpUser):
     def PostMessage(self):
         wait_time = between(0.1, 0.9)
         if len(self.data) != 0 :
-            res = self.client.post("/publicar", json=self.data[0])
+            res = self.client.get("/")
 
-            print(res)
+            print(res.text)
             self.data.pop(0)
         else:
             print(">> MessageTraffic: Envio de tráfico finalizado, no hay más datos que enviar.")
