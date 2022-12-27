@@ -1,0 +1,5 @@
+1. Para instalar las dependencias solo copiar el package.json y ejecutar
+npm i
+
+2. Para correr el contenedor con  redis utilizar el comando
+docker run --name cacheRedis1 -p 6379:6379 -d redis
