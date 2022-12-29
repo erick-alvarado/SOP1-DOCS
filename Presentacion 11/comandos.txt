@@ -1,0 +1,29 @@
+1. Conectarse a su cluster de kubernetes mediante el link que les provee GCP
+2. Dentro de la consola ejecutar los siguientes comandos
+
+curl -sL https://run.linkerd.io/install | sh
+export PATH=$PATH:$HOME/.linkerd2/bin
+linkerd version
+linkerd check --pre
+linkerd install | kubectl apply -f -
+
+
+linkerd version
+kubectl get namespaces
+kubectl get all -n linkerd
+linkerd check
+
+linkerd viz install | kubectl apply -f -
+linkerd check
+
+kubectl -n linkerd get deploy
+linkerd dashboard &
+
+
+3. Para llevar un control de los distintos objetos utilizar los comandos
+
+export PATH=$PATH:$HOME/.linkerd2/bin
+
+kubectl get deploy server-deployment -o yaml \
+  | linkerd inject - \
+  | kubectl apply -f -
